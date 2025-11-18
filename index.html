@@ -11,7 +11,7 @@
 <script src="//ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>
 
 <script src="sevenseg.js"></script>
-<title>Bouncing Balls</title>
+<title>Eclipse Game</title>
 <style>
     body, html {
         margin: 0;
@@ -97,7 +97,7 @@
         update();
     }
 
-    // Ball with bouncing motion
+
     var sun = {
         x: 100,
         y: 100,
@@ -107,7 +107,7 @@
         dy: 2
     };
 
-    // Ball that follows the cursor
+
     var moon = {
         x: canvas.width / 2,
         y: canvas.height / 2,
@@ -125,7 +125,7 @@
 
     function update() {
         now = new Date();
-        // Update bouncing ball position
+ 
         //sun.x += sun.dx;
         //sun.y += sun.dy;
 
@@ -142,7 +142,7 @@
             ctx.fillStyle = "rgb(205,240,255)";
             ctx.fillRect(0, 0, canvas.width, canvas.height);
         }
-        // Draw bouncing ball
+
 
 
         var coveragePercentage = calculateCoveragePercentage();
